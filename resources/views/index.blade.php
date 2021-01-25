@@ -1,7 +1,7 @@
 @extends('_layouts.app')
 
 @section('content')
-
+<h1>test</h1>
 
     <section class="hero">
         <div class="container">
