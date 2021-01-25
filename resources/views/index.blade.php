@@ -25,8 +25,8 @@
                             <form action="#">
                                 <div class="hero__search__categories">
                                     Բոլոր Բաժինները
-                                    <span class="arrow_carrot-down"></span>
-                                </div>
+<!--                                     <span class="arrow_carrot-down"></span>
+ -->                                </div>
                                 <input type="text" placeholder="Ի՞նչ եք փնտրում․․․">
                                 <button type="submit" class="site-btn">Փնտրել</button>
                             </form>
@@ -41,8 +41,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="img/hero/banner.jpg"
-                         style="background-image: url(&quot;img/hero/banner.jpg&quot;);">
+                    <div class="hero__item set-bg" data-setbg="/storage/images/ban.jpg"
+                         style="background-image: url(&quot;/storage/images/ban.jpg&quot;);height:355px;">
                         <div class="hero__text">
                             <span>Արտ Շին</span>
                             <h2>Մատչելի և <br>որակյալ</h2>

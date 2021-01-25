@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>ArtShin</title>
 
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{asset('assets\css\style.css')}}" type="text/css">
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
-    <!-- Styles -->
+    
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -44,7 +44,9 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="footer__about">
                     <div class="footer__about__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html">Artshin
+                            <img src="img/logo.png" alt="">
+                            </a>
                     </div>
                     <ul>
                         <li>Address: Երևան, Ավան, Աճառյան</li>

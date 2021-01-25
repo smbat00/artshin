@@ -13,16 +13,17 @@
     <div class="humberger__menu__cart">
         <ul>
             <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+            <li><a href="#"><i class="fa fa-shopping-bag"></i> <span></span></a></li>
         </ul>
-        <div class="header__cart__price">item: <span>$150.00</span></div>
+
+        <div class="header__cart__price"><span>{{date("Y.m.d")}}</span></div>
     </div>
     <div class="humberger__menu__widget">
         <div class="header__top__right__language">
             <img src="img/language.png" alt="">
             <div>English</div>
-            <span class="arrow_carrot-down"></span>
-            <ul>
+<!--             <span class="arrow_carrot-down"></span>
+ -->            <ul>
                 <li><a href="#">Spanis</a></li>
                 <li><a href="#">English</a></li>
             </ul>
@@ -101,35 +102,35 @@
 
 
 
-                        <div class="header__top__right__language">
-{{--                            <img src="img/language.png" alt="">--}}
-                            @guest
-                            <div><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></div>
-                            <span class="arrow_carrot-down"></span>
-                                @if (Route::has('register'))
-                            <ul>
-                                <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
-                            </ul>
-                                @endif
-                            @else
-                                <div><a class="nav-link" href="#">{{ Auth::user()->name }}</a></div>
-                                <span class=""><i class="fas fa-caret-down"></i></span>
-
-                                <ul>
-                                    <li>
-                                        <a class="dropdown-item" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            {{ __('Logout') }}
-                                        </a>
-
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-                                    </li>
-                                </ul>
-                            @endguest
-                        </div>
+                       <!--  <div class="header__top__right__language">
+                       {{--                            <img src="img/language.png" alt="">--}}
+                           @guest
+                           <div><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></div>
+                           <span class="arrow_carrot-down"></span>
+                               @if (Route::has('register'))
+                           <ul>
+                               <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                           </ul>
+                               @endif
+                           @else
+                               <div><a class="nav-link" href="#">{{ Auth::user()->name }}</a></div>
+                               <span class=""><i class="fas fa-caret-down"></i></span>
+                       
+                               <ul>
+                                   <li>
+                                       <a class="dropdown-item" href="{{ route('logout') }}"
+                                          onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                           {{ __('Logout') }}
+                                       </a>
+                       
+                                       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                           @csrf
+                                       </form>
+                                   </li>
+                               </ul>
+                           @endguest
+                       </div> -->
 
                         <div class="header__top__right__auth">
 {{--                            <a href="#"><i class="fa fa-user"></i> Login</a>--}}
@@ -144,24 +145,26 @@
         <div class="row">
             <div class="col-lg-3">
                 <div class="header__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    <a class="logo_text" href="/">
+<!--                         <img src="img/logo.png" alt="">
+ -->                        ArtShin</a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <nav class="header__menu">
                     <ul>
-                        <li class="active"><a href="./index.html">Home</a></li>
-                        <li><a href="./shop-grid.html">Shop</a></li>
-                        <li><a href="#">Pages</a>
-                            <ul class="header__menu__dropdown">
-                                <li><a href="./shop-details.html">Shop Details</a></li>
-                                <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                <li><a href="./checkout.html">Check Out</a></li>
-                                <li><a href="./blog-details.html">Blog Details</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="./blog.html">Blog</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li class="active"><a href="./index.html">Գլխավոր</a></li>
+<!--                         <li><a href="#">Տեսական</a></li>
+ -->                   <!--      <li><a href="#">Pages</a>
+                       <ul class="header__menu__dropdown">
+                           <li><a href="./shop-details.html">Shop Details</a></li>
+                           <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                           <li><a href="./checkout.html">Check Out</a></li>
+                           <li><a href="./blog-details.html">Blog Details</a></li>
+                       </ul>
+                   </li> -->
+                        <li><a href="#">Մեր Մասին</a></li>
+                        <li><a href="#">Կապ</a></li>
                     </ul>
                 </nav>
             </div>
@@ -171,7 +174,7 @@
                         <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                         <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                     </ul>
-                    <div class="header__cart__price">item: <span>$150.00</span></div>
+                    <div class="header__cart__price"><span>{{date("Y.m.d")}}</span></div>
                 </div>
             </div>
         </div>

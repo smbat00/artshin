@@ -27,7 +27,7 @@
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star-half-o"></i>
-                        <span>(18 reviews)</span>
+                        <span>({{rand(10,100)}} կարծիք)</span>
                     </div>
                     <div class="product__details__price">{{$single_items->price}} դրամ</div>
                     <p>{{$single_items->description}}</p>
@@ -39,9 +39,9 @@
                                </div>
                         </div>
                     </div>
-                    <a href="#" class="primary-btn">ADD TO CARD</a>
-                    <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
-                    <ul>
+                    <a href="#" class="primary-btn">+ Զամբյուղ</a>
+<!--                     <a href="#" class="heart-icon"><span class="icon_heart_alt"></span></a>
+ -->                    <ul>
                         <li><b>Արտադրող</b> <span>{{$single_items->makeBy}}</span></li>
                         <li><b>Բաժինը</b> <span>{{$single_items->cname}}</span></li>
                         <li><b>Հրապարակվել է</b> <span>{{$single_items->created_at}}</span></li>
