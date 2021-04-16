@@ -40,8 +40,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="hero__item set-bg" data-setbg="/storage/images/ban.jpg"
-                         style="background-image: url(&quot;/storage/images/ban.jpg&quot;);height:355px;">
+                    <div class="hero__item set-bg" data-setbg="{{asset('img/IMG_20180715_160408-1024x768.jpg')}}"
+                         style="background-image: url(&quot;/storage/images/ban.jpg&quot;);height:355px;background-position: center">
                         <div class="hero__text">
                             <span>Արտ Շին</span>
                             <h2>Մատչելի և <br>որակյալ</h2>

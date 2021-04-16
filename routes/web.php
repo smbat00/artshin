@@ -26,7 +26,7 @@ Route::get('/cpanel/category', 'AdminController@category')->name('acategory');
 Route::get('/cpanel/category/addcategory', 'AdminController@addcategory')->name('addcategory');
 Route::get('/cpanel/items', 'AdminController@items')->name('items');
 Route::post('/cpanel/items/additems', 'AdminController@additems')->name('additems');
-Route::post('/cpanel/items/delitems/{id}', 'AdminController@delitems')->name('delitems');
+Route::get('/cpanel/items/delitems/{id}', 'AdminController@delitems')->name('delitems');
 
     });
 
@@ -39,3 +39,7 @@ Route::get('/category/{id}', 'SiteController@singlecategory')->name('singlecateg
 //Route::get('/cpanel', function () {
 //    return view('admin/index');
 //});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

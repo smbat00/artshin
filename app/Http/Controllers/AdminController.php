@@ -56,9 +56,8 @@ class AdminController extends Controller
 
         return back();
     }
-    public function delitems(Request $request){
-        $product_id = $request->post('id');
-
-        dd($product_id);
+    public function delitems($id){
+        $del_product = Items::find($id)->delete();
+        return back();
     }
 }
