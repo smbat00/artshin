@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Items;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class AdminController extends Controller
 {
@@ -54,5 +55,10 @@ class AdminController extends Controller
 
 
         return back();
+    }
+    public function delitems(Request $request){
+        $product_id = $request->post('id');
+
+        dd($product_id);
     }
 }
